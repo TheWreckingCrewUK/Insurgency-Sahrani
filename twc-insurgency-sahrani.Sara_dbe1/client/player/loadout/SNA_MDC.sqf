@@ -1,0 +1,56 @@
+comment "Exported from Arsenal by Crow";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "rhsgref_uniform_ERDL";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_quikclot";};
+this addItemToUniform "ACE_EarPlugs";
+this addItemToUniform "ACE_morphine";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_packingBandage";};
+this addItemToUniform "ACE_tourniquet";
+this addItemToUniform "ACRE_PRC152";
+this addItemToUniform "ACE_MapTools";
+this addItemToUniform "ACE_Clacker";
+this addVest "rhsgref_TacVest_ERDL";
+this addItemToVest "Chemlight_green";
+this addItemToVest "HandGrenade";
+for "_i" from 1 to 3 do {this addItemToVest "CUP_18Rnd_9x19_Phantom";};
+for "_i" from 1 to 3 do {this addItemToVest "rhsgref_30rnd_556x45_m21";};
+this addBackpack "CUP_B_SLA_Medicbag";
+this addItemToBackpack "ACE_EntrenchingTool";
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_fieldDressing";};
+for "_i" from 1 to 20 do {this addItemToBackpack "ACE_elasticBandage";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_quikclot";};
+for "_i" from 1 to 8 do {this addItemToBackpack "ACE_epinephrine";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_morphine";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_packingBandage";};
+this addItemToBackpack "ACE_personalAidKit";
+for "_i" from 1 to 4 do {this addItemToBackpack "ACE_tourniquet";};
+for "_i" from 1 to 10 do {this addItemToBackpack "ACE_salineIV";};
+this addHeadgear "rhsgref_helmet_pasgt_erdl_rhino";
+this addGoggles "rhs_balaclava1_olive";
+
+comment "Add weapons";
+this addWeapon "rhs_weap_m21a_pr";
+this addPrimaryWeaponItem "rhsusf_acc_compm4";
+this addWeapon "CUP_hgun_Phantom";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemcTab";
+this linkItem "rhs_1PN138";

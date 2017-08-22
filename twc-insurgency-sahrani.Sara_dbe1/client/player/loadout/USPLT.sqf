@@ -1,0 +1,52 @@
+comment "Exported from Arsenal by Crow";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "rhs_uniform_cu_ocp_101st";
+this addItemToUniform "FirstAidKit";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_elasticBandage";};
+this addItemToUniform "ACE_tourniquet";
+for "_i" from 1 to 2 do {this addItemToUniform "ACE_morphine";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_packingBandage";};
+this addItemToUniform "ACE_EarPlugs";
+this addItemToUniform "ACRE_PRC148";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_quikclot";};
+this addItemToUniform "ACE_Clacker";
+this addVest "rhsusf_spcs_ocp";
+this addItemToVest "SmokeShell";
+this addItemToVest "SmokeShellGreen";
+this addItemToVest "Chemlight_green";
+for "_i" from 1 to 2 do {this addItemToVest "HandGrenade";};
+for "_i" from 1 to 2 do {this addItemToVest "rhsusf_mag_7x45acp_MHP";};
+for "_i" from 1 to 3 do {this addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+this addBackpack "rhsusf_falconii_mc";
+this addItemToBackpack "ACRE_PRC117F";
+this addItemToBackpack "DemoCharge_Remote_Mag";
+this addHeadgear "rhsusf_hgu56p";
+this addGoggles "rhs_scarf";
+
+comment "Add weapons";
+this addWeapon "rhs_weap_m4_mstock";
+this addPrimaryWeaponItem "rhsusf_acc_SF3P556";
+this addPrimaryWeaponItem "UK3CB_BAF_Eotech";
+this addPrimaryWeaponItem "rhsusf_acc_grip2";
+this addWeapon "rhsusf_weap_m1911a1";
+this addWeapon "ACE_Vector";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ACE_Altimeter";
+this linkItem "ItemRadio";
+this linkItem "ItemcTab";
+this linkItem "rhsusf_ANPVS_14";

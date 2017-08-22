@@ -1,0 +1,51 @@
+comment "Exported from Arsenal by Crow";
+
+comment "Remove existing items";
+removeAllWeapons this;
+removeAllItems this;
+removeAllAssignedItems this;
+removeUniform this;
+removeVest this;
+removeBackpack this;
+removeHeadgear this;
+removeGoggles this;
+
+comment "Add containers";
+this forceAddUniform "rhsgref_uniform_ERDL";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_fieldDressing";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_elasticBandage";};
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_quikclot";};
+this addItemToUniform "ACE_EarPlugs";
+this addItemToUniform "ACE_morphine";
+for "_i" from 1 to 5 do {this addItemToUniform "ACE_packingBandage";};
+this addItemToUniform "ACE_tourniquet";
+this addItemToUniform "ACRE_PRC152";
+this addItemToUniform "ACE_MapTools";
+this addItemToUniform "ACE_Clacker";
+this addVest "rhsgref_TacVest_ERDL";
+this addItemToVest "Chemlight_green";
+this addItemToVest "HandGrenade";
+for "_i" from 1 to 3 do {this addItemToVest "rhs_30Rnd_762x39mm";};
+for "_i" from 1 to 3 do {this addItemToVest "rhs_mag_M441_HE";};
+this addBackpack "B_TacticalPack_rgr";
+this addItemToBackpack "ACRE_PRC117F";
+this addItemToBackpack "DemoCharge_Remote_Mag";
+for "_i" from 1 to 6 do {this addItemToBackpack "rhs_mag_M441_HE";};
+for "_i" from 1 to 2 do {this addItemToBackpack "1Rnd_SmokeRed_Grenade_shell";};
+for "_i" from 1 to 2 do {this addItemToBackpack "1Rnd_SmokeBlue_Grenade_shell";};
+for "_i" from 1 to 2 do {this addItemToBackpack "rhs_mag_m714_White";};
+this addHeadgear "rhsgref_helmet_pasgt_erdl_rhino";
+this addGoggles "rhs_balaclava1_olive";
+
+comment "Add weapons";
+this addWeapon "rhs_weap_m70ab2";
+this addWeapon "rhs_weap_M320";
+this addWeapon "Binocular";
+
+comment "Add items";
+this linkItem "ItemMap";
+this linkItem "ItemCompass";
+this linkItem "ItemWatch";
+this linkItem "ItemRadio";
+this linkItem "ItemcTab";
+this linkItem "rhs_1PN138";
